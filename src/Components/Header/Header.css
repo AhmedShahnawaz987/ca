@@ -86,6 +86,7 @@
     transition: 0.3s ease-out;
     opacity: 1;
     width: fit-content;
+    border:1px solid gray;
 }
 
 .navbar__links

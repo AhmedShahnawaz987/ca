@@ -55,6 +55,9 @@ function Header() {
               <li className="navbar__links">Blogs</li>
               <li className="navbar__links">Contact us</li>
             </ul> */}
+             <a href="as" className="navbar__links1">
+              Home
+            </a>
             <a href="as" className="navbar__links1 active">
               About
             </a>
@@ -67,9 +70,7 @@ function Header() {
             <a href="as" className="navbar__links1">
               Contact Us
             </a>
-            <a href="as" className="navbar__links1">
-              Home
-            </a>
+           
           </div>
           <button className="header__right_button"><CallIcon />Call us</button>
           <div className="hamburger">
