@@ -18,17 +18,6 @@ function Footer() {
                 <p>Chattered Associates Accounting and Bookkeeping Services LLC is a central hub for all the Management Consultant Services you need in Dubai. From Advisory Services to Tax Auditing, we offer a wide variety of services to an inclusive clientele.</p>
                 </div>
             
-            {/* <div className="footer__middle">
-                <h1 style={{fontSize:"20px"}} >Quick Links</h1>
-                <ul className="footerrr">
-                    <a href="about us" className="footer__links"><li>About us</li></a>
-                    <a href="about us" className="footer__links"><li>Why CA</li></a>
-                    <a href="about us"  className="footer__links"><li>Contact Us</li></a>
-                    <a href="about us" className="footer__links"><li>Privacy policy</li></a>
-                    <a href="about us" className="footer__links"><li>Careers</li></a>
-                </ul>
-
-            </div> */}
             <div className="footer__middle">
                 <h1 style={{fontSize:"20px"}}>Our services</h1>
                 <a href="our services" className="footer__links"><li>About us</li></a>
@@ -53,7 +42,7 @@ function Footer() {
                 <a href="dd" >Phone No: +971 426 100 89</a>
                 <a href="dd">Mobile No: +971 426 100 89</a>
                 <a href="dd">Mobile No1: +971 426 100 89</a>
-                <a href="email" style={{color:"white"}}>E-mail: info@cdaaudit.com</a>
+                <a href="email" style={{color:"white"}}>E-mail: info@ca     audit.com</a>
             </div>
             </div>
             <div className="social__links">
