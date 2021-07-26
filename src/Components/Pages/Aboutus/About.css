@@ -50,6 +50,7 @@
 .aboutUs__wwa__image
 {
     width: 100%;
+    visibility: visible;
 }
 }
 
@@ -84,7 +85,7 @@
     align-items: center;
     text-align: center;
 }
-.filter1
+.aboutUs__tabs
 {
     /* background-color: red; */
     padding: 10px;
@@ -141,4 +142,44 @@
     display: flex;
     justify-content: center;
     padding: 5px;
+}
+
+@media(max-width:500px) {
+    .aboutus__wwa__image
+    {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .aboutUs__wwa
+    {
+        /* overflow: hidden; */
+    }
+
+.tabContainer__row
+{
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 230px;
+    top: 2rem;
+    /* right: 0px!important; */
+}
+
+.aboutUs__wwa__image1
+{
+    width: 80%;
+    height: 150px;
+}
+.aboutUs__tabPane>h1
+{
+    font-size: 30px;
+}
+.aboutUs__tabPane>p
+{
+    font-size: 14px;
+}
+
 }

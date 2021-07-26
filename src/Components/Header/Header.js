@@ -1,20 +1,8 @@
-// import React from "react";
 import "./Header.css";
 import { Carousel } from "react-bootstrap";
-// import Navbar from "./Navbar";
-
-
-// import heading from "/My project/ca/src/Assets/cheading.png";
-
 function Header() {
-  
-  
-  
-
   return (
     <div>
-    
-     
       <Carousel fade className="carousal">
         <Carousel.Item>
           <img
