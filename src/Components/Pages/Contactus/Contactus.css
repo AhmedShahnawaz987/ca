@@ -1,0 +1,116 @@
+.contactUs__main>img
+{width:100%;
+height:23rem;
+object-fit: cover;
+opacity:0.8;
+
+}
+
+.contactUs__main1
+{
+    position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.contactUs__left{
+    width:40%;
+    height:600px;
+    /* background-color: yellow; */
+    margin: 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contactUs__right{
+    padding: 10px 0px 0px;
+    width:40%;
+    height: 600px;
+    /* background-color: red; */
+}
+.calll
+{
+    color: black;
+    width: 37px!important;
+    height: 37px!important;
+    /* background-color: fuchsia; */
+}
+.contactUs__call
+{
+    /* background-color: forestgreen; */
+    border-bottom: 1px solid #053742 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+.contactUs__call:nth-child(4)
+{
+    border-bottom: none!important;
+}
+.contactUs__form>form{
+   width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between!important;
+    align-items: center;
+    /* padding: 10px; */
+
+}
+
+.contactUs__form
+{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+
+}
+#standard-basic
+{
+    /* margin: 20px 0px 0px; */
+    /* height: 10px; */
+   
+}
+.contactUs__form1
+{
+    /* border: 1px solid red; */
+    margin: 10px 0 10px;
+}
+.contactUs__form__input
+{
+    margin: 10px 0 10px;
+    height:100px;
+    width:200px;
+    /* border: 1px solid black; */
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.contactUs__form__input>textarea
+{
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+.contactUs__submit{
+    background-color: #22abe3;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s;
+    width: 80%;
+    height: 40px;
+    font-weight: 500;
+   
+   }
+   .contactUs__submit:hover{
+    color: black;
+   
+   
+   }
