@@ -162,8 +162,10 @@
     width: 100%;
     margin: 0 0 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .ourteam__members {
     width: 130px;

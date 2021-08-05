@@ -15,7 +15,7 @@ function Footer() {
             <div className="footer__container1">
                 <div className="footer__left">
                 <img src={logo} alt="" className="footer__logo"></img>
-                <p>Chattered Associates Accounting and Bookkeeping Services LLC is a central hub for all the Management Consultant Services you need in Dubai. From Advisory Services to Tax Auditing, we offer a wide variety of services to an inclusive clientele.</p>
+                <p>Chattered Associates Accounting and Bookkeeping Services LLC is a central hub for all the Management Consultant Services you need in Mumbai. From Advisory Services to Tax Auditing, we offer a wide variety of services to an inclusive clientele.</p>
                 </div>
             
             <div className="footer__middle">
@@ -38,7 +38,7 @@ function Footer() {
             </div>
             <div className="footer__right">
                 <h1 style={{fontSize:"20px"}}>Contact Us</h1>
-                <p>40th floor, Citadel tower Business Bay Dubai, PO Box : 5586</p>
+                <p>40th floor, Citadel tower Business Bay Mumbai</p>
                 <a href="dd" >Phone No: +971 426 100 89</a>
                 <a href="dd">Mobile No: +971 426 100 89</a>
                 <a href="dd">Mobile No1: +971 426 100 89</a>

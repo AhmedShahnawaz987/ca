@@ -2,7 +2,7 @@ import "./Header.css";
 import { Carousel } from "react-bootstrap";
 function Header() {
   return (
-    <div>
+    <div className="header__main">
       <Carousel fade className="carousal">
         <Carousel.Item>
           <img
@@ -38,7 +38,7 @@ function Header() {
         </Carousel.Item>
       </Carousel>
       
-      <div className="request__form">
+      <div className="request__form" data-aos="fade-right">
         <div className="request__form__list">
           <h1 className="request__form__title">Request a consultation</h1>
           <div className="request__input">

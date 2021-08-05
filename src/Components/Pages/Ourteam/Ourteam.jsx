@@ -49,10 +49,10 @@ function Ourteam() {
             <h4>Our Team</h4>
             <p>
               We strive to ensure the best customer experience. In order to do
-              that, CDA has also built one of the best teams in the financial
+              that, CA has also built one of the best teams in the financial
               service industry. Our team consists of experts from each field, be
               it accounting, auditing, analytics or reporting, with Experience
-              from Big 4 Audit firms. Because of this team, CDA is capable of
+              from Big 4 Audit firms. Because of this team, CA is capable of
               delivering comprehensive reports that speak facts and ideas,
               instead of mere numbers. Our beyond-the-numbers approach have been
               devised by the team and the approach has had a notable success in
