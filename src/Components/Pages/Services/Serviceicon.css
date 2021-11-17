@@ -1,26 +1,26 @@
-.serviceicon>img{
-    position: relative;
-left: 8%;
-/* background-color: gray; */
-}
-.serviceicon>span
-{
-    font-family: "Arial",sans-serif;
-   font-weight: 500;
-   position: relative;
-   left: 10%;
-}
-@media(max-width:768px)
-{
-    .serviceicon>span
-    {
+.serviceicon {}
 
-    
-    font-size: 12px;
+.serviceicon>img {
+    /* position: relative; */
+    /* left: 8%; */
+    /* background-color: gray; */
+    margin: 2px;
+}
+
+.serviceicon>span {
+    font-family: "Arial", sans-serif;
+    font-weight: 500;
+    position: relative;
+    /* left: 10%; */
+}
+
+@media(max-width:768px) {
+    .serviceicon>span {
+        font-size: 15px;
     }
-    .serviceicon>img{
-        position: relative;
-        left: 8%;
-   
+    .serviceicon>img {
+        /* position: relative; */
+        /* left: 8%; */
+        margin: 1px;
     }
 }

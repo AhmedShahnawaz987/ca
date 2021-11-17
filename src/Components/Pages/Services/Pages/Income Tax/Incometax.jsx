@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Incometax.css";
+// import "./Incometax.css";
 function Incometax() {
     return (
         <div className="service__incometax__main">

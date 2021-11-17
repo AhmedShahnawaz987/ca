@@ -1,0 +1,14 @@
+.aboutus {
+    position: relative;
+    /* top: 85px; */
+    width: 100%;
+    
+}
+
+.aboutUs__first {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

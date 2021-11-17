@@ -6,7 +6,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
-
+import {Link} from "react-router-dom";
 
 function Footer() {
     return (
@@ -20,9 +20,9 @@ function Footer() {
             
             <div className="footer__middle">
                 <h1 style={{fontSize:"20px"}}>Our services</h1>
-                <a href="our services" className="footer__links"><li>About us</li></a>
-                <a href="our services" className="footer__links"><li>Why CA</li></a>
-                <a href="our services" className="footer__links"><li>Contact Us</li></a>
+                <Link to="/about" className="footer__links"><li>About us</li></Link>
+                <Link to="" className="footer__links"><li>Why CA</li></Link>
+                <Link to="/contactus" className="footer__links"><li>Contact Us</li></Link>
                 <a href="our services" className="footer__links"><li>Privacy policy</li></a>
                 <a href="our services" className="footer__links"><li>Careers</li></a>
 
@@ -69,7 +69,7 @@ function Footer() {
               </div>
               
               </Container>
-              <div className="footer__line"></div>
+              {/* <div className="footer__line"></div> */}
               <div className="footer__copy">
                   <p>2021 Copyright © <span className="footer__copy__ca">CA Audit</span> All Rights Reserved.</p>
               </div>

@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+:root{
+--primary-color:#22abe3;
+--secondary-font: "Playfair Display", serif;
+}
 h3{
   font-family: "Playfair Display", serif;
 }

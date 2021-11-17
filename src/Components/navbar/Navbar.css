@@ -1,0 +1,223 @@
+.navbar__links1:hover {
+    background-color: var(--primary-color) !important;
+}
+
+.header {
+    
+    visibility: visible;
+    padding: 15px;
+    z-index: 999;
+    width: 100%;
+    /* height: fit-content; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(5, 55, 66, 0.1); 
+}
+.sr-only
+{
+    display: none;
+}
+.header1 {
+    visibility: visible;
+    padding: 5px;
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    height:fit-content;
+    width: 100%;
+    transition: 1s ease-in-out;
+    background-color: rgba(5, 55, 66, 0.9);
+}
+
+.header__logo {
+    /* height: 100px; */
+    /* width: 100px; */
+    /* background-color: red; */
+    /* z-index: 999; */
+    /* height: 100%!important;
+    position:absolute;
+    left: 50%;
+    transform: translateY(50%);
+    top: 0; */
+}
+
+.header__logo>img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.header__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 55px;
+    position: fixed;
+    right: 1px;
+    /* background-color: red; */
+}
+
+.header__right>.header__right_button {
+    background-color: rgba(128, 128, 128, 0.5);
+    width: fit-content;
+    height: fit-content;
+    padding: 9px;
+    /* margin: 10px; */
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.header__right>.header__right_button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition: 0.3s ease-out;
+    opacity: 1;
+}
+
+.navbar__links {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar__links>a {
+    color: var(--primary-color);
+    margin: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+
+/* .active,
+.navbar__links > a:hover {
+  color: white;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.2s ease-out;
+} */
+
+.navbar__links {
+    visibility: visible;
+}
+
+.hamburger {
+    visibility: hidden;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    /* padding: 8px 8px 8px 32px; */
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media(max-width:768px) {
+    .hamburger {
+        visibility: visible;
+    }
+    .hamburger {
+        overflow: hidden;
+        z-index: 100;
+    }
+    .hamburger__button {
+        padding: 8px;
+        background-color: var(--primary-color);
+        border-radius: 7px;
+        width: 50px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        color: #e8f0f2;
+    }
+    .hamburger__links {
+        border-top: 1px solid rgba(232, 240, 242, 0.5);
+        font-size: 20px !important;
+        font-weight: 600;
+    }
+    .hamburger__links:nth-child(6) {
+        border-bottom: 1px solid rgba(232, 240, 242, 0.5);
+    }
+    .header__right {
+        margin-right: 10px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar__links {
+        visibility: hidden;
+        display: none;
+    }
+    .sidenav {
+        background-color: var(--primary-color) !important;
+    }
+    .sidenav>a {
+        color: #e8f0f2 !important;
+    }
+    .header__right>.header__right_button {
+        margin: 10px;
+    }
+    .header__logo {
+        /* height: 100px; */
+        /* width: 100px; */
+        /* background-color: red; */
+        /* z-index: 999; */
+        /* height: 100%!important;
+        position:absolute;
+        left: 50%;
+        transform: translateY(50%);
+        top: 0; */
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

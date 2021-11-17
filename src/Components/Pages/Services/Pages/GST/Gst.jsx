@@ -1,10 +1,59 @@
 import React from 'react'
-import "./Gst.css";
+import "../Pages.css";
+import { Col, Nav, Row, Tab, TabContainer } from "react-bootstrap";
 function Gst() {
     return (
-        <div className="service__gst__main">
-                        {/* <img src="https://images.unsplash.com/photo-1615572766543-06c21416eb05?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVsbCUyMGhkfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"/> */}
-
+        <div className="pages__main">
+                       
+      <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+        <Row>
+          <Col sm={3}>
+            <Nav variant="pills" className="flex-column">
+              <Nav.Item className="navitem">
+                <Nav.Link eventKey="first" className="navlink">GST</Nav.Link>
+              </Nav.Item>
+              <Nav.Item className="navitem">
+                <Nav.Link eventKey="second" className="navlink">Tax Deducted Source (TDS)</Nav.Link>
+              </Nav.Item>
+              <Nav.Item className="navitem">
+                <Nav.Link eventKey="third" className="navlink">Pay roll</Nav.Link>
+              </Nav.Item>
+              <Nav.Item className="navitem">
+                <Nav.Link eventKey="fourth" className="navlink">Labour Tax</Nav.Link>
+              </Nav.Item>
+              <Nav.Item className="navitem">
+                <Nav.Link eventKey="fifth" className="navlink">Company Law</Nav.Link>
+              </Nav.Item>
+              <Nav.Item className="navitem">
+                <Nav.Link eventKey="sixth" className="navlink">Annual Compliance</Nav.Link>
+              </Nav.Item>
+            </Nav>
+          </Col>
+          <Col sm={9}>
+            <Tab.Content>
+              <Tab.Pane eventKey="first">
+               
+              </Tab.Pane>
+              <Tab.Pane eventKey="second">
+               
+              </Tab.Pane>
+              <Tab.Pane eventKey="third">
+               
+              </Tab.Pane>
+              <Tab.Pane eventKey="fourth">
+               
+              </Tab.Pane>
+              <Tab.Pane eventKey="fifth">
+               
+              </Tab.Pane>
+              <Tab.Pane eventKey="sixth">
+               
+              </Tab.Pane>
+            </Tab.Content>
+          </Col>
+        </Row>
+      </Tab.Container>
+      
         </div>
     )
 }

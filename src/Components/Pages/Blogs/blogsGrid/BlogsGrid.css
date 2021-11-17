@@ -1,0 +1,110 @@
+@keyframes read{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.blogsGrid__wrap {
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    height: 100%;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(3,minmax(10rem,1fr));
+    grid-gap:30px ;
+
+}
+.blogsGrid__imgdate
+{
+width: 100%;
+height: fit-content;
+background-color: black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+position: relative;
+
+/* box-shadow: 1px 1px 10px rgba(0,0,0,0.5); */
+
+}
+.blogsGrid__imgdate>img
+{
+    background-position:center;
+    background-size:cover;
+    width:100%;
+    height:200px;
+}
+.blogsGrid__imgdate>span
+{
+    color:white;
+    position:absolute;
+    width: fit-content;
+    /* bottom:-15px; */
+    top:-15px;
+    left:50%;
+    font-size:1.1em;
+    font-weight:600;    
+    padding:7px;
+    transform:translateX(-50%);    
+    background-color:var(--primary-color);
+}
+.blogsGrid__imgdate__wrap
+{
+    padding:10px;
+    /* height:500px; */
+}
+.blogsGrid__imgdate__wrap>.readmore
+{
+    text-decoration: none;
+    color: var(--primary-color);
+    float: right;
+}
+.blogsGrid__imgdate__wrap>.readmore:hover
+{
+    animation:read 1.5s infinite forwards;
+}
+
+
+.blogsGrid__titlepara
+{
+    padding-top:15px;   
+}
+.blogsGrid__titlepara>p
+{
+    /* background-color: red; */  
+    height: 120px; 
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:5;
+    -webkit-box-orient: vertical;
+}
+
+@media(max-width:768px)
+{
+    .blogsGrid__wrap {
+        width: 95%;
+        padding:20px 5px 0px;
+        /* margin-top: 20px; */
+        grid-template-columns: repeat(1,minmax(10rem,1fr));
+        grid-gap:10px ;
+    
+    }
+    .blogsGrid__imgdate__wrap
+{
+    padding:10px 10px 25px;
+    /* height:500px; */
+}
+    .blogsGrid__titlepara
+{
+    padding-top:5px;   
+}
+}

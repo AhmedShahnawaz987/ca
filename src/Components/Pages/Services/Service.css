@@ -1,69 +1,73 @@
 .service__main {
     position: relative;
-    top: 85px;
+    /* top: 85px; */
     width: 100%;
     display: flex;
     flex-direction: column;
     font-family: "Playfair Display", serif;
-  }
-.service__head > img {
+}
+
+
+/* .service__head > img {
     width: 100%;
     height: 300px;
-  }
-  .service__head {
+  } */
+
+.service__head {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+}
+
 .service__title {
     position: absolute;
     border-top: 3px solid #053742;
     border-bottom: 3px solid #053742;
-  }
-  .service__title > h3 {
+}
+
+.service__title>h3 {
     font-size: 45px;
-  }
-  .service__tabs
-  {
+}
+
+.service__tabs {
     margin-top: 10px;
-  }
-  .tabs__wrapper{
-    background-color: rgba(34,171,227,0.2); 
-    display:flex;
-    justify-content:space-evenly;
+}
+
+.tabs__wrapper {
+    background-color: rgba(34, 171, 227, 0.2);
+    display: flex;
+    justify-content: space-evenly;
     margin-bottom: none;
     border-radius: 5px;
-  }
-  .tabs__wrapper>a
-  {
+}
+
+.tabs__wrapper>a {
     font-size: 18px;
     font-weight: 600;
-  }
-  .tabs__inner
-  {
+}
+
+.tabs__inner {
     width: 100%;
-    height: 600px;
-  }
-@media(max-width:768px)
-{
-    .tabs__inner
-  {
-    height: 1200px;
-  }
-  .tabs__wrapper{
-      padding: 3px;
-    background-color: rgba(34,171,227,0.2); 
-  }
-  .tabs__wrapper>a
-  {
-    font-size: 15px;
-    border:none;
-    font-weight: 600;
-    border-radius: 10px!important;
-  }
-  /* .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+    height: 100%;
+}
+
+@media(max-width:768px) {
+    .tabs__inner {
+        height: 1200px;
+    }
+    .tabs__wrapper {
+        padding: 3px;
+        background-color: rgba(34, 171, 227, 0.2);
+    }
+    .tabs__wrapper>a {
+        font-size: 15px;
+        border: none;
+        font-weight: 600;
+        border-radius: 10px!important;
+    }
+    /* .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
   {
       border-color:  rgba(34,171,227,0.1) ;
   } */

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import "./Service.css";
 import { NavLink } from "react-router-dom";
 import { Container, Tabs, Tab } from "react-bootstrap";
@@ -7,15 +7,21 @@ import Gst from "./Pages/GST/Gst";
 import Compliance from "./Pages/Compliances/Compliance";
 import Incometax from "./Pages/Income Tax/Incometax";
 import Labourtax from "./Pages/Labour Tax/Labourtax";
+// import Banner from "../../banner/Banner";
+
+const Banner = lazy(() => import("../../banner/Banner"));
+
 function Service() {
   return (
     <div className="service__main">
+      <Suspense fallback={<div style={{ width:"100%", height:"500px", backgroundColor:"rgba(128, 128, 128, 0.1)"}}>Loading</div>}>
+      <Banner img={"https://wallpapercave.com/wp/wp7319154.jpg"} heading={"Our Services"} />
+      </Suspense>
+      
       <div className="service__head">
-        <img src="https://wallpapercave.com/wp/wp7319154.jpg" />
-        <div className="service__title">
-          <h3>Our Services</h3>
-        </div>
+        {/* <img src="https://wallpapercave.com/wp/wp7319154.jpg" /> */}                
       </div>
+
       <Container>
         <div className="service__tabs">
           <Tabs
@@ -31,24 +37,24 @@ function Service() {
               title="Compliances"
               className="tabs__inner "
             >
-             <Compliance/>
+              <Compliance />
             </Tab>
             <Tab eventKey="gst" title="GST" className="tabs__inner">
-              <Gst/>
+              <Gst />
             </Tab>
             <Tab
               eventKey="income"
               title="Income Tax"
               className="tabs__inner"
             >
-              <Incometax/>
+              <Incometax />
             </Tab>
             <Tab
               eventKey="labour"
               title="Labour Tax"
               className="tabs__inner"
             >
-              <Labourtax/>
+              <Labourtax />
             </Tab>
           </Tabs>
         </div>

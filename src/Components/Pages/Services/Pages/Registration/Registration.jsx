@@ -1,5 +1,5 @@
 import React from "react";
-import "./Registration.css";
+import "../Pages.css";
 import { Tab, Nav, Col, Row, Container } from "react-bootstrap";
 import register from "/Myproject/ca/src/Assets/register.svg";
 import shop from "/Myproject/ca/src/Assets/shop.png";
@@ -52,7 +52,7 @@ function Registration() {
               </Nav>
             </Col>
             <Col sm={9} className="tabs__area">
-              <Tab.Content>
+              <Tab.Content className="tab__content">
                 <Tab.Pane eventKey="first" className="tab__pane">
                   <h4>Sole Proprietor Registration</h4>
                   <p>

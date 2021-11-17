@@ -1,0 +1,227 @@
+
+
+.header__main
+{
+  font-family:"Arial",sans-serif;
+}
+
+
+.scrolling-active {
+  background-color: white;
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.7);
+}
+
+.carousel__caption > h3 {
+  color: black;
+}
+
+.Carousel {
+  height: 500px;
+}
+
+.w-100 {
+  height: 700px;
+  object-fit: cover;
+}
+.w-200 {
+  height: 700px;
+  width: 100%;
+}
+.carousel-caption {
+  position: absolute;
+  right: 78%;
+  bottom: 60%;
+  left: 0;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+.carousel-caption > h3 {
+  font-weight: 800;
+  font-size: xx-large;
+}
+
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5%;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+.request__form {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 40rem;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+.request__form__list {
+  background-color: #f1f1f1;
+  display: flex;
+  width: 97%;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0.75);
+  height: 140px;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+}
+.request__input {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 250px;
+  height: 45px;
+  padding: 0.5rem;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+.request__label {
+  position: absolute;
+  left: 1rem;
+  top: 2rem;
+  font-size: 15px;
+  padding: 0 0.25rem;
+  transition: 0.3s;
+  font-weight: 800;
+  z-index: 1;
+}
+
+.request__input__type {
+  position: absolute;
+  outline: none;
+  border: none;
+  left: 0.2rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  background: none;
+  z-index: 2;
+}
+.request__input__type:focus + .request__label {
+  top: -0.7rem;
+  left: 0.5rem;
+  background-color: #f1f1f1;
+}
+.request__input__type:not(:placeholder-shown).request__input__type:not(:focus)
+  + .request__label {
+  top: -0.7rem;
+  left: 5.5rem;
+  background-color: #f1f1f1;
+}
+.request__form__send {
+  background-image: linear-gradient(to right, #39a2db, #053742);
+  width: 150px;
+  height: 45px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.request__form__send > a {
+  color: white;
+  text-decoration: none;
+}
+
+.request__form__send:hover {
+  background-image: linear-gradient(to right, #053742, #39a2db);
+  color: var(--primary-color);
+}
+
+.request__form__title {
+  font-size: 20px;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  /* margin-top: 10px; */
+}
+
+.actives {
+  background-color: #22abe3 !important;
+  color: white !important;
+}
+.actives::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #22abe3;
+}
+
+
+@media (max-width: 768px) {
+  .request__form {
+    top: 27rem;
+    padding: 20px;
+  }
+  .request__form__send {
+    margin-bottom: 5px;
+  }
+
+  .request__form__title {
+    font-size: 20px;
+    /* margin-top: 10px; */
+    position: relative !important;
+  }
+  .request__form__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+  }
+  .request__input {
+    width: 80%;
+    height: 39px;
+  }
+  .request__input:nth-child(1) {
+    margin-top: 40px;
+  }
+  .w-100 {
+    height: 600px;
+  }
+  .w-200 {
+    height: 600px;
+  }
+  .carousal {
+    height: 600px;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 30%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
