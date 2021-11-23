@@ -71,7 +71,7 @@ function Footer() {
               </Container>
               {/* <div className="footer__line"></div> */}
               <div className="footer__copy">
-                  <p>2021 Copyright © <span className="footer__copy__ca">CA Audit</span> All Rights Reserved.</p>
+                  <p>2021 Copyright © <span className="footer__copy__ca">Intplus technosolution</span> All Rights Reserved.</p>
               </div>
         </div>
     )

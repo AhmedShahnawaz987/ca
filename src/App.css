@@ -2,7 +2,10 @@
 
 :root{
 --primary-color:#22abe3;
+--secondary-color:#053742;
 --secondary-font: "Playfair Display", serif;
+--mobile-font:1.2em;
+
 }
 h3{
   font-family: "Playfair Display", serif;

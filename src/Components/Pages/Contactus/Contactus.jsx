@@ -4,10 +4,34 @@ import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import AccessTimeIcon from "@material-ui/icons/AccessTime";
 import TextField from "@material-ui/core/TextField";
-import React,{lazy, useEffect , Suspense} from "react";
+import React,{lazy, useEffect , Suspense, useState} from "react";
 import "./Contactus.css";
 // import Banner from "../../banner/Banner";
 function Contactus() {
+  const [input, setInput] = useState({
+    name:"",
+    email:"",
+    company:"",
+    contact:"",
+    message:""
+});
+const [record,setRecord]=useState([]);
+  const handleInput=(e)=>{
+    const name = e.target.name;
+    // console.log(name);
+    const value = e.target.value;
+    // console.log(value);
+    setInput({...input, [name]:value});
+  }
+
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    const newRecord = ({...input, id:new Date().getTime().toString()})
+    console.log(record);
+    setRecord([...record,newRecord]);
+    setInput({name:"",email:"",company:"",contact:"",message:""})
+  }
+  
   useEffect(()=>{
     window.scrollTo(0,0)
   },[])
@@ -49,43 +73,42 @@ function Contactus() {
           <div className="contactUs__right "   >          {/* data-aos="fade-up" */}
             
               <h3>Send us a message</h3>
-              {/* <p>
-                It just takes one conversation to get the ball unstuck and
-                rolling in the right direction, so why not get in touch?
-              </p> */}
+              
             
             <div className="contactUs__form">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="contactUs__form1">
                   <TextField
                     id="standard-basic"
                     label="First name"
                     required
-                    name="name"
+                    name="name" autoComplete="off" value={input.name}  onChange={handleInput}
                   />
                 </div>
                 <div className="contactUs__form1">
-                  <TextField id="standard-basic" label="Email" required />
+                  <TextField id="standard-basic" label="Email"  autoComplete="off"required name="email" 
+                  value={input.email} onChange={handleInput}/>
                 </div>
                 <div className="contactUs__form1">
-                  <TextField id="standard-basic" label="Company/Organisation" />
+                  <TextField id="standard-basic" label="Company/Organisation" name="company" autoComplete="off" 
+                  value={input.company} onChange={handleInput}/>
                 </div>
                 <div className="contactUs__form1">
                   <TextField
                     id="standard-basic"
-                    label="Contact Number"
+                    label="Contact Number" autoComplete="off" name="contact"
                     required
+                    value={input.contact} onChange={handleInput}
                   />
                 </div>
                 <div className="contactUs__form__input">
-                  <textarea placeholder="Message" required />
+                  <textarea placeholder="Message" name="message" value={input.message} />
                 </div>
-                <br/>
-                <input
-                  type="submit"
-                  value="Submit"
+                {/* <br/> */}
+                <button
+                  type="submit"                  
                   className="contactUs__submit"
-                ></input>
+                >Submit</button>
               </form>
             </div>
           </div>

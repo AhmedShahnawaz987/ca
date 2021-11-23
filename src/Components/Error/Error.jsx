@@ -153,7 +153,7 @@ function Error() {
 </g>
 </svg>
 <h3>Page not found</h3>
-<Link to="/" className="home__button">Go back to home</Link>
+{/* <Link to="/" className="home__button">Go back to home</Link> */}
         </div>
     )
 }

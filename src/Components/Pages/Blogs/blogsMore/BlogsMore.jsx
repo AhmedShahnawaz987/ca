@@ -19,7 +19,8 @@ function BlogsMore({match}) {
     //     console.log(fetchBlogs);
     // }
      const blooog = blogsdetails.find((detail)=>
-        detail.id===parseInt(match.params.id))
+        detail.id===parseInt(match.params.id));
+        
         
     return (                 
             <div className="bolgsMore">

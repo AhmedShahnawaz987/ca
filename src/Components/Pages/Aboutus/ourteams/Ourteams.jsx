@@ -1,8 +1,6 @@
 import { Container } from "@material-ui/core";
 import React from "react";
-// import Banner from "../../../banner/Banner";
 import "./Ourteams.css";
-// import ourteam from "/Myproject/ca/src/Assets/ourteam.jpg";
 import team from "./team.json";
 import managment from "./management.json";
 function Ourteam() {

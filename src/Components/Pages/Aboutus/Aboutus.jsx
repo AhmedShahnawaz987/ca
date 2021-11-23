@@ -13,8 +13,8 @@ function Aboutus() {
   return (
     <div>
       <div className="aboutus">
-      <Suspense fallback={<div style={{ width:"100%", height:"500px", backgroundColor:"rgba(128, 128, 128, 0.1)"}}>Loading</div>}>
-      <Banner img={aboutus} heading="About Us"/>
+      <Suspense fallback={<div style={{ width:"100%", height:"500px",filter:"grayscale(100%)"}}>Loading</div>}>
+      <Banner img={aboutus} heading="About Us / Our Managements"/>
       </Suspense>
       </div>
      
