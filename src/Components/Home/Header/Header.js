@@ -1,35 +1,14 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
 import { Carousel } from "react-bootstrap";
+import RequestForm from "./requestForm/RequestForm";
 function Header() {
-  const [records,setRecords] = useState([]);
-  const [userRegistration, setUserRegistration] = useState({
-    fullname:"",
-    email:"",
-    message:""
-  })
+  
   useEffect(()=>{
     window.scrollTo(0,0)
   },[])
 
-const handleInput = (e) =>{
- const name= e.target.name;
- const value = e.target.value;
- setUserRegistration({...userRegistration,[name]:value})
-}
 
-const handleSubmit = (e) =>{
-  e.preventDefault();
-  const newRecord = {...userRegistration,  id:new Date().getTime().toString()}
-  console.log(records);
-
-  setRecords([...records, newRecord])
-  console.log(records);
-
-
-  setUserRegistration({fullname:"",email:"",message:""});
- 
-}
   return (
     <div className="header__main">
       <Carousel fade className="carousal">
@@ -66,36 +45,8 @@ const handleSubmit = (e) =>{
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <form action="" onSubmit={handleSubmit}>
-      <div className="request__form" data-aos="fade-right">
-        <div className="request__form__list">
-          <h1 className="request__form__title">Request a consultation</h1>
 
-          <div className="request__input">
-            <input type="text" className="request__input__type" autoComplete="off"  name="fullname" 
-             value={userRegistration.fullname} onChange={handleInput}/>
-            <label className="request__label">Name</label>
-          </div>
-
-          <div className="request__input">
-            <input type="email" className="request__input__type" autoComplete="off" name="email" 
-            value={userRegistration.email} onChange={handleInput}/>
-            <label className="request__label">Email</label>
-          </div>
-
-          <div className="request__input">
-            <input type="text" className="request__input__type" autoComplete="off" name="message"
-             value={userRegistration.message} onChange={handleInput}/>
-            <label className="request__label">Contact Number</label>
-          </div>
-
-          {/* <div className="request__form__send"> */}
-            <button type="submit" className="request__form__send">Send</button>
-          {/* </div> */}
-        </div>
-      </div>
-      </form>
-    
+      <RequestForm/>    
     </div>
   );
 }

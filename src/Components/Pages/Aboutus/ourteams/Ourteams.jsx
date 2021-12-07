@@ -2,32 +2,12 @@ import { Container } from "@material-ui/core";
 import React from "react";
 import "./Ourteams.css";
 import team from "./team.json";
-import managment from "./management.json";
+import Management from "./management/Management.jsx";
 function Ourteam() {
   return (
     <div className="ourteam">
       <Container>
-        <div className="ourteam__managemant">
-          <h2>Meet our Management</h2>
-          <p>
-            The management is solely dedicated to support you and deliver you
-            the best financial assistance and proven economic strategies to
-            enhance your growth phenomenally.
-          </p>
-        </div>
-        <div className="ourteam__management__profile">
-          {managment.map((detail, index) => (
-            <div className="ourteam__management__profile1">
-              <img src="https://st2.depositphotos.com/2777531/6975/v/600/depositphotos_69759199-stock-illustration-male-person-silhouette.jpg" />
-              <div className="ourteam__managemant__details">
-                <>
-                  <h1>{detail.name}</h1>
-                  <h5>{detail.des}</h5>
-                </>
-              </div>
-            </div>
-          ))}
-        </div>
+        <Management/>
         <div className="ourteam__main">
           <div className="left">
             <h3>Our Team</h3>

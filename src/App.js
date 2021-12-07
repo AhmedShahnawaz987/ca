@@ -11,6 +11,7 @@ import Contactus from './Components/Pages/Contactus/Contactus';
 import Error from "./Components/Error/Error";
 import BlogsMore from './Components/Pages/Blogs/blogsMore/BlogsMore';
 import Home from './Components/Home/Home';
+import Latestmore from './Components/Home/latestupdation/latestmore/Latestmore';
 
 // import Ourteam from './Components/Pages/Ourteam/Ourteam';
 
@@ -25,6 +26,7 @@ function App() {
              <Route exact path = "/" > < Home /> </Route>   
              <Route path = "/about" > < Aboutus /> </Route>  
              <Route path = "/services" > < Services /> </Route>
+             <Route path = "/latestmore/:id" > <Latestmore/> </Route>
               {/* <Route path = "/ourteam" > <Ourteam /> </Route>   */}
              <Route exact path = "/blogs"> < Blogs/> </Route>  
              <Route path="/blogs/:id" component={BlogsMore}/>

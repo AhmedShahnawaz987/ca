@@ -31,9 +31,9 @@
 }
 .aboutSection__innner>p{
     color:rgba(255,255,255,0.8);
-    padding: 10px 20px 0px;
+    padding: 30px 20px 0px;
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 @media(max-width:768px)
 {

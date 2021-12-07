@@ -128,7 +128,6 @@
     /* color: var(--primary-color); */
     color: var(--secondary-color);
     animation: slide 1s infinite forwards;
-    font-weight: 700;
    
 }
 

@@ -7,7 +7,7 @@ function AboutSection() {
             <div className="aboutSection__Wrap">
             <div className="aboutSection__innner">           
             <span>Mission</span>
-            <p>Quis eu reprehenderit velit aliqua nulla sunt anim consectetur dolore consectetur duis. Laboris ipsum ut excepteur eu. Ipsum consequat irure esse irure ad. Cupidatat consequat  voluptate aute</p>
+            <p>The one and only mission is that to create the best and smoothest environment to the business concerns. Our clients will never feel any difficulty to run bussiness because of tax and accounting issues</p>
             </div> 
             </div>
         </div>

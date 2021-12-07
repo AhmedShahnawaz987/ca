@@ -7,8 +7,7 @@ import Gst from "./Pages/GST/Gst";
 import Compliance from "./Pages/Compliances/Compliance";
 import Incometax from "./Pages/Income Tax/Incometax";
 import Labourtax from "./Pages/Labour Tax/Labourtax";
-// import Banner from "../../banner/Banner";
-
+import ServicesDataList from './ServicesData.js';
 const Banner = lazy(() => import("../../banner/Banner"));
 
 function Service() {
@@ -18,11 +17,9 @@ function Service() {
       <Banner img={"https://wallpapercave.com/wp/wp7319154.jpg"} heading={"Our Services"} />
       </Suspense>
       
-      <div className="service__head">
-        {/* <img src="https://wallpapercave.com/wp/wp7319154.jpg" /> */}                
-      </div>
+      
 
-      <Container>
+      {/* <Container>
         <div className="service__tabs">
           <Tabs
             defaultActiveKey="profile"
@@ -57,6 +54,18 @@ function Service() {
               <Labourtax />
             </Tab>
           </Tabs>
+        </div>
+      </Container> */}
+      <Container>
+      <div className="services_Grid">
+        {ServicesDataList.map((content,index)=>(
+         
+            <div className="services_GridInner">
+          <span>{content.title}</span>
+          </div>
+       
+        ))}
+                      
         </div>
       </Container>
     </div>

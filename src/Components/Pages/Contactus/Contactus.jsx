@@ -51,17 +51,16 @@ const [record,setRecord]=useState([]);
           <div className="contactUs__left" >  {/*data-aos="fade-down"*/}
             <div className="contactUs__call">
               <CallIcon className="contactUs__icon" />
-              <span>(022) 232444</span>
+              <span>0460 2203084</span>
             </div>
             <div className="contactUs__call">
               <MailOutlineIcon className="contactUs__icon" />
-              <span>info@ms-ca.com</span>
+              <span>cataxtpba@gmail.com</span>
             </div>
             <div className="contactUs__call">
               <LocationOnIcon className="contactUs__icon" />
               <span>
-                Suite 501, Floor 5, City Tower, M.G Road (Airport Road) –
-                Mumbai, INDIA
+                Post office Road, Thaliparamba, Kannur - 670141
               </span>
             </div>
             <div className="contactUs__call">
@@ -102,7 +101,7 @@ const [record,setRecord]=useState([]);
                   />
                 </div>
                 <div className="contactUs__form__input">
-                  <textarea placeholder="Message" name="message" value={input.message} />
+                  <textarea placeholder="Message" name="message" value={input.message} onChange={handleInput} />
                 </div>
                 {/* <br/> */}
                 <button

@@ -15,11 +15,11 @@ function Footer() {
             <div className="footer__container1">
                 <div className="footer__left">
                 <img src={logo} alt="" className="footer__logo"></img>
-                <p>Chattered Associates Accounting and Bookkeeping Services LLC is a central hub for all the Management Consultant Services you need in Mumbai. From Advisory Services to Tax Auditing, we offer a wide variety of services to an inclusive clientele.</p>
+                <p>Chartered Associates<br/>Tax Consultent & Accountants</p>
                 </div>
             
             <div className="footer__middle">
-                <h1 style={{fontSize:"20px"}}>Our services</h1>
+                <h1 style={{fontSize:"20px"}}></h1>
                 <Link to="/about" className="footer__links"><li>About us</li></Link>
                 <Link to="" className="footer__links"><li>Why CA</li></Link>
                 <Link to="/contactus" className="footer__links"><li>Contact Us</li></Link>
@@ -29,20 +29,20 @@ function Footer() {
             </div>
             <div className="footer__middle1">
                 <h1 style={{fontSize:"20px"}}>Our services</h1>
-                <a href="our services" className="footer__links"><li>Bussiness services</li></a>
                 <a href="our services" className="footer__links"><li>Accounting</li></a>
-                <a href="our services" className="footer__links"><li>Auditing & Assurance Services</li></a>
-                <a href="our services" className="footer__links"><li>Vat</li></a>
-                <a href="our services" className="footer__links"><li>Accounting Software</li></a>
+                <a href="our services" className="footer__links"><li>Auditing</li></a>
+                <a href="our services" className="footer__links"><li> GST Registration / Filing</li></a>
+                <a href="our services" className="footer__links"><li>TAN Application</li></a>
+                <a href="our services" className="footer__links"><li>PAN Application</li></a>
 
             </div>
             <div className="footer__right">
                 <h1 style={{fontSize:"20px"}}>Contact Us</h1>
-                <p>40th floor, Citadel tower Business Bay Mumbai</p>
-                <a href="dd" >Phone No: +971 426 100 89</a>
-                <a href="dd">Mobile No: +971 426 100 89</a>
-                <a href="dd">Mobile No1: +971 426 100 89</a>
-                <a href="email" style={{color:"white"}}>E-mail: info@ca     audit.com</a>
+                <p>Post office road<br/>Taliparamba<br/>Kannur - 670 141</p>
+                <p style={{textDecoration:"none",color:"white"}}>Phone No: 0460 2203084</p>
+                <p style={{textDecoration:"none",color:"white"}}>Mobile No: 8301078971, 8301059384</p>
+                {/* <a href="dd">Mobile No1: </a> */}
+                <a href="email" style={{color:"white"}}>cataxtpba@gmail.com</a>
             </div>
             </div>
             <div className="social__links">

@@ -5,6 +5,7 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import "./LatestUpdates.css"
 import updates from '../Updates'
 function Latestudates() {
+    
 
     
     
@@ -25,7 +26,7 @@ function Latestudates() {
             </div>
             ))} 
         </div>
-        <Link to="/LUpdate" className="latestUpdates__readMore">View more<ArrowForwardIcon className="latestUpdates__readMoreIcon"/></Link>
+        {/* <Link to={"/latestmore"}  className="latestUpdates__readMore">View more<ArrowForwardIcon className="latestUpdates__readMoreIcon"/></Link> */}
         </div>
     )
 }
